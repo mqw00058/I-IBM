@@ -1,12 +1,8 @@
 # I-IBM
 **GUI-based 3D Surface Processing Tool**
 
-!License
-!Platform
-!Build
-!Qt
-!OpenMesh
-![OpenCV](https://img*Demo performing 3D surface visualization/processing in I-IBM interface.*
+
+*Demo performing 3D surface visualization/processing in I-IBM interface.*
 
 ---
 
