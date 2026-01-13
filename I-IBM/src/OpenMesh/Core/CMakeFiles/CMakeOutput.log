@@ -1,0 +1,243 @@
+The system is: Windows - 6.2 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+0
+Microsoft (R) Build Engine 버전 4.0.30319.33440
+[Microsoft .NET Framework, 버전 4.0.30319.34014]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+빌드 시작: 2014-07-17 오후 5:29:56
+1 노드의 "D:\project\app\I-IBM2\I-IBM\lib\OpenMesh-3.1\src\OpenMesh\Core\CMakeFiles\3.0.0\CompilerIdC\CompilerIdC.vcxproj" 프로젝트(기본 대상)입니다.
+PrepareForBuild:
+  "Debug\" 디렉터리를 만들고 있습니다.
+InitializeBuildStatus:
+  "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\CompilerIdC.unsuccessfulbuild"을(를) 만들고 있습니다.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /nologo /W0 /WX- /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X64 Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> D:\project\app\I-IBM2\I-IBM\lib\OpenMesh-3.1\src\OpenMesh\Core\CMakeFiles\3.0.0\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\cl.exe
+FinalizeBuildStatus:
+  "Debug\CompilerIdC.unsuccessfulbuild" 파일을 삭제하고 있습니다.
+  "Debug\CompilerIdC.lastbuildstate"에 연결(touching)하고 있습니다.
+"D:\project\app\I-IBM2\I-IBM\lib\OpenMesh-3.1\src\OpenMesh\Core\CMakeFiles\3.0.0\CompilerIdC\CompilerIdC.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+
+빌드했습니다.
+    경고 0개
+    오류 0개
+
+경과 시간: 00:00:00.21
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "D:/project/app/I-IBM2/I-IBM/lib/OpenMesh-3.1/src/OpenMesh/Core/CMakeFiles/3.0.0/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+0
+Microsoft (R) Build Engine 버전 4.0.30319.33440
+[Microsoft .NET Framework, 버전 4.0.30319.34014]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+빌드 시작: 2014-07-17 오후 5:29:56
+1 노드의 "D:\project\app\I-IBM2\I-IBM\lib\OpenMesh-3.1\src\OpenMesh\Core\CMakeFiles\3.0.0\CompilerIdCXX\CompilerIdCXX.vcxproj" 프로젝트(기본 대상)입니다.
+PrepareForBuild:
+  "Debug\" 디렉터리를 만들고 있습니다.
+InitializeBuildStatus:
+  "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\CompilerIdCXX.unsuccessfulbuild"을(를) 만들고 있습니다.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /nologo /W0 /WX- /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X64 Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> D:\project\app\I-IBM2\I-IBM\lib\OpenMesh-3.1\src\OpenMesh\Core\CMakeFiles\3.0.0\CompilerIdCXX\.\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\cl.exe
+FinalizeBuildStatus:
+  "Debug\CompilerIdCXX.unsuccessfulbuild" 파일을 삭제하고 있습니다.
+  "Debug\CompilerIdCXX.lastbuildstate"에 연결(touching)하고 있습니다.
+"D:\project\app\I-IBM2\I-IBM\lib\OpenMesh-3.1\src\OpenMesh\Core\CMakeFiles\3.0.0\CompilerIdCXX\CompilerIdCXX.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+
+빌드했습니다.
+    경고 0개
+    오류 0개
+
+경과 시간: 00:00:00.22
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "D:/project/app/I-IBM2/I-IBM/lib/OpenMesh-3.1/src/OpenMesh/Core/CMakeFiles/3.0.0/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: D:/project/app/I-IBM2/I-IBM/lib/OpenMesh-3.1/src/OpenMesh/Core/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTryCompileExec1231185928.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=11.0"
+Microsoft (R) Build Engine 버전 4.0.30319.33440
+[Microsoft .NET Framework, 버전 4.0.30319.34014]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+빌드 시작: 2014-07-17 오후 5:29:57
+1 노드의 "D:\project\app\I-IBM2\I-IBM\lib\OpenMesh-3.1\src\OpenMesh\Core\CMakeFiles\CMakeTmp\cmTryCompileExec1231185928.vcxproj" 프로젝트(기본 대상)입니다.
+PrepareForBuild:
+  "cmTryCompileExec1231185928.dir\Debug\" 디렉터리를 만들고 있습니다.
+  "D:\project\app\I-IBM2\I-IBM\lib\OpenMesh-3.1\src\OpenMesh\Core\CMakeFiles\CMakeTmp\Debug\" 디렉터리를 만들고 있습니다.
+InitializeBuildStatus:
+  "AlwaysCreate"이(가) 지정되었기 때문에 "cmTryCompileExec1231185928.dir\Debug\cmTryCompileExec1231185928.unsuccessfulbuild"을(를) 만들고 있습니다.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec1231185928.dir\Debug\\" /Fd"cmTryCompileExec1231185928.dir\Debug\vc110.pdb" /Gd /TC /errorReport:queue testCCompiler.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 17.00.50727.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec1231185928.dir\Debug\\" /Fd"cmTryCompileExec1231185928.dir\Debug\vc110.pdb" /Gd /TC /errorReport:queue testCCompiler.c
+  
+  testCCompiler.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\project\app\I-IBM2\I-IBM\lib\OpenMesh-3.1\src\OpenMesh\Core\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1231185928.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win64" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/project/app/I-IBM2/I-IBM/lib/OpenMesh-3.1/src/OpenMesh/Core/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1231185928.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/project/app/I-IBM2/I-IBM/lib/OpenMesh-3.1/src/OpenMesh/Core/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1231185928.lib" /MACHINE:X64  /machine:x64 /debug cmTryCompileExec1231185928.dir\Debug\testCCompiler.obj
+  cmTryCompileExec1231185928.vcxproj -> D:\project\app\I-IBM2\I-IBM\lib\OpenMesh-3.1\src\OpenMesh\Core\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1231185928.exe
+FinalizeBuildStatus:
+  "cmTryCompileExec1231185928.dir\Debug\cmTryCompileExec1231185928.unsuccessfulbuild" 파일을 삭제하고 있습니다.
+  "cmTryCompileExec1231185928.dir\Debug\cmTryCompileExec1231185928.lastbuildstate"에 연결(touching)하고 있습니다.
+"D:\project\app\I-IBM2\I-IBM\lib\OpenMesh-3.1\src\OpenMesh\Core\CMakeFiles\CMakeTmp\cmTryCompileExec1231185928.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+
+빌드했습니다.
+    경고 0개
+    오류 0개
+
+경과 시간: 00:00:00.33
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: D:/project/app/I-IBM2/I-IBM/lib/OpenMesh-3.1/src/OpenMesh/Core/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTryCompileExec2307257626.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=11.0"
+Microsoft (R) Build Engine 버전 4.0.30319.33440
+[Microsoft .NET Framework, 버전 4.0.30319.34014]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+빌드 시작: 2014-07-17 오후 5:29:57
+1 노드의 "D:\project\app\I-IBM2\I-IBM\lib\OpenMesh-3.1\src\OpenMesh\Core\CMakeFiles\CMakeTmp\cmTryCompileExec2307257626.vcxproj" 프로젝트(기본 대상)입니다.
+PrepareForBuild:
+  "cmTryCompileExec2307257626.dir\Debug\" 디렉터리를 만들고 있습니다.
+  "D:\project\app\I-IBM2\I-IBM\lib\OpenMesh-3.1\src\OpenMesh\Core\CMakeFiles\CMakeTmp\Debug\" 디렉터리를 만들고 있습니다.
+InitializeBuildStatus:
+  "AlwaysCreate"이(가) 지정되었기 때문에 "cmTryCompileExec2307257626.dir\Debug\cmTryCompileExec2307257626.unsuccessfulbuild"을(를) 만들고 있습니다.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec2307257626.dir\Debug\\" /Fd"cmTryCompileExec2307257626.dir\Debug\vc110.pdb" /Gd /TC /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCCompilerABI.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 17.00.50727.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec2307257626.dir\Debug\\" /Fd"cmTryCompileExec2307257626.dir\Debug\vc110.pdb" /Gd /TC /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCCompilerABI.c"
+  
+  CMakeCCompilerABI.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\project\app\I-IBM2\I-IBM\lib\OpenMesh-3.1\src\OpenMesh\Core\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2307257626.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win64" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/project/app/I-IBM2/I-IBM/lib/OpenMesh-3.1/src/OpenMesh/Core/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2307257626.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/project/app/I-IBM2/I-IBM/lib/OpenMesh-3.1/src/OpenMesh/Core/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2307257626.lib" /MACHINE:X64  /machine:x64 /debug cmTryCompileExec2307257626.dir\Debug\CMakeCCompilerABI.obj
+  cmTryCompileExec2307257626.vcxproj -> D:\project\app\I-IBM2\I-IBM\lib\OpenMesh-3.1\src\OpenMesh\Core\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2307257626.exe
+FinalizeBuildStatus:
+  "cmTryCompileExec2307257626.dir\Debug\cmTryCompileExec2307257626.unsuccessfulbuild" 파일을 삭제하고 있습니다.
+  "cmTryCompileExec2307257626.dir\Debug\cmTryCompileExec2307257626.lastbuildstate"에 연결(touching)하고 있습니다.
+"D:\project\app\I-IBM2\I-IBM\lib\OpenMesh-3.1\src\OpenMesh\Core\CMakeFiles\CMakeTmp\cmTryCompileExec2307257626.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+
+빌드했습니다.
+    경고 0개
+    오류 0개
+
+경과 시간: 00:00:00.33
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: D:/project/app/I-IBM2/I-IBM/lib/OpenMesh-3.1/src/OpenMesh/Core/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTryCompileExec405841548.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=11.0"
+Microsoft (R) Build Engine 버전 4.0.30319.33440
+[Microsoft .NET Framework, 버전 4.0.30319.34014]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+빌드 시작: 2014-07-17 오후 5:29:58
+1 노드의 "D:\project\app\I-IBM2\I-IBM\lib\OpenMesh-3.1\src\OpenMesh\Core\CMakeFiles\CMakeTmp\cmTryCompileExec405841548.vcxproj" 프로젝트(기본 대상)입니다.
+PrepareForBuild:
+  "cmTryCompileExec405841548.dir\Debug\" 디렉터리를 만들고 있습니다.
+  "D:\project\app\I-IBM2\I-IBM\lib\OpenMesh-3.1\src\OpenMesh\Core\CMakeFiles\CMakeTmp\Debug\" 디렉터리를 만들고 있습니다.
+InitializeBuildStatus:
+  "AlwaysCreate"이(가) 지정되었기 때문에 "cmTryCompileExec405841548.dir\Debug\cmTryCompileExec405841548.unsuccessfulbuild"을(를) 만들고 있습니다.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec405841548.dir\Debug\\" /Fd"cmTryCompileExec405841548.dir\Debug\vc110.pdb" /Gd /TP /errorReport:queue testCXXCompiler.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 17.00.50727.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec405841548.dir\Debug\\" /Fd"cmTryCompileExec405841548.dir\Debug\vc110.pdb" /Gd /TP /errorReport:queue testCXXCompiler.cxx
+  
+  testCXXCompiler.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\project\app\I-IBM2\I-IBM\lib\OpenMesh-3.1\src\OpenMesh\Core\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec405841548.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win64" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/project/app/I-IBM2/I-IBM/lib/OpenMesh-3.1/src/OpenMesh/Core/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec405841548.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/project/app/I-IBM2/I-IBM/lib/OpenMesh-3.1/src/OpenMesh/Core/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec405841548.lib" /MACHINE:X64  /machine:x64 /debug cmTryCompileExec405841548.dir\Debug\testCXXCompiler.obj
+  cmTryCompileExec405841548.vcxproj -> D:\project\app\I-IBM2\I-IBM\lib\OpenMesh-3.1\src\OpenMesh\Core\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec405841548.exe
+FinalizeBuildStatus:
+  "cmTryCompileExec405841548.dir\Debug\cmTryCompileExec405841548.unsuccessfulbuild" 파일을 삭제하고 있습니다.
+  "cmTryCompileExec405841548.dir\Debug\cmTryCompileExec405841548.lastbuildstate"에 연결(touching)하고 있습니다.
+"D:\project\app\I-IBM2\I-IBM\lib\OpenMesh-3.1\src\OpenMesh\Core\CMakeFiles\CMakeTmp\cmTryCompileExec405841548.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+
+빌드했습니다.
+    경고 0개
+    오류 0개
+
+경과 시간: 00:00:00.27
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: D:/project/app/I-IBM2/I-IBM/lib/OpenMesh-3.1/src/OpenMesh/Core/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Windows/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" "cmTryCompileExec2307692711.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=11.0"
+Microsoft (R) Build Engine 버전 4.0.30319.33440
+[Microsoft .NET Framework, 버전 4.0.30319.34014]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+빌드 시작: 2014-07-17 오후 5:29:58
+1 노드의 "D:\project\app\I-IBM2\I-IBM\lib\OpenMesh-3.1\src\OpenMesh\Core\CMakeFiles\CMakeTmp\cmTryCompileExec2307692711.vcxproj" 프로젝트(기본 대상)입니다.
+PrepareForBuild:
+  "cmTryCompileExec2307692711.dir\Debug\" 디렉터리를 만들고 있습니다.
+  "D:\project\app\I-IBM2\I-IBM\lib\OpenMesh-3.1\src\OpenMesh\Core\CMakeFiles\CMakeTmp\Debug\" 디렉터리를 만들고 있습니다.
+InitializeBuildStatus:
+  "AlwaysCreate"이(가) 지정되었기 때문에 "cmTryCompileExec2307692711.dir\Debug\cmTryCompileExec2307692711.unsuccessfulbuild"을(를) 만들고 있습니다.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec2307692711.dir\Debug\\" /Fd"cmTryCompileExec2307692711.dir\Debug\vc110.pdb" /Gd /TP /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCXXCompilerABI.cpp"
+  Microsoft (R) C/C++ Optimizing Compiler Version 17.00.50727.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec2307692711.dir\Debug\\" /Fd"cmTryCompileExec2307692711.dir\Debug\vc110.pdb" /Gd /TP /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCXXCompilerABI.cpp"
+  
+  CMakeCXXCompilerABI.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\project\app\I-IBM2\I-IBM\lib\OpenMesh-3.1\src\OpenMesh\Core\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2307692711.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win64" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/project/app/I-IBM2/I-IBM/lib/OpenMesh-3.1/src/OpenMesh/Core/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2307692711.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/project/app/I-IBM2/I-IBM/lib/OpenMesh-3.1/src/OpenMesh/Core/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2307692711.lib" /MACHINE:X64  /machine:x64 /debug cmTryCompileExec2307692711.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTryCompileExec2307692711.vcxproj -> D:\project\app\I-IBM2\I-IBM\lib\OpenMesh-3.1\src\OpenMesh\Core\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2307692711.exe
+FinalizeBuildStatus:
+  "cmTryCompileExec2307692711.dir\Debug\cmTryCompileExec2307692711.unsuccessfulbuild" 파일을 삭제하고 있습니다.
+  "cmTryCompileExec2307692711.dir\Debug\cmTryCompileExec2307692711.lastbuildstate"에 연결(touching)하고 있습니다.
+"D:\project\app\I-IBM2\I-IBM\lib\OpenMesh-3.1\src\OpenMesh\Core\CMakeFiles\CMakeTmp\cmTryCompileExec2307692711.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+
+빌드했습니다.
+    경고 0개
+    오류 0개
+
+경과 시간: 00:00:00.26
+
+

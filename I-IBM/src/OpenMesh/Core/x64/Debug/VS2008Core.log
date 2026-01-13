@@ -1,0 +1,34 @@
+﻿  ArrayKernel.cc
+  BaseKernel.cc
+  BaseProperty.cc
+  BaseReader.cc
+  BaseWriter.cc
+  BinaryHelper.cc
+  Endian.cc
+  IOManager.cc
+  OBJReader.cc
+  OBJWriter.cc
+  OFFReader.cc
+  OFFWriter.cc
+  OMFormat.cc
+  OMReader.cc
+  omstream.cc
+  OMWriter.cc
+  PLYReader.cc
+  PLYWriter.cc
+  PolyConnectivity.cc
+  STLReader.cc
+IO\reader\STLReader.cc(457): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+  Generating Code...
+  Compiling...
+  STLWriter.cc
+IO\writer\STLWriter.cc(145): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+IO\writer\STLWriter.cc(262): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+  TriConnectivity.cc
+  Generating Code...
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1357,5): warning MSB8012: TargetPath(C:\I-IBM2\I-IBM\src\OpenMesh\Core\..\..\..\lib\x64\Core.lib) does not match the Library's OutputFile property value (C:\I-IBM2\lib\x64\OpenMeshCored.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1359,5): warning MSB8012: TargetName(Core) does not match the Library's OutputFile property value (OpenMeshCored). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  VS2008Core.vcxproj -> C:\I-IBM2\I-IBM\src\OpenMesh\Core\..\..\..\lib\x64\Core.lib
