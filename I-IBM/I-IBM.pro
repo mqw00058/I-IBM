@@ -20,15 +20,13 @@ INCLUDEPATH += ./src \
 
 LIBS += -L"./lib" \
     -L"C:/Qt/Qt5.8.0/5.8/msvc2015_64/lib" \
-    -L"C:/Users/jangi/OneDrive - VUMC/Desktop/I-IBM2/lib/x64" \
+    -L"./src/OpenMesh/lib" \
     -lopencv_core248d \
     -lopencv_highgui248d \
     -lopencv_imgproc248d \
     -lOpenMeshCored \
     -lOpenMeshToolsd
-#    -l"C:/Program \
-#    -lFiles/Microsoft \
-#    -lSDKs/Kinect/v2.0-DevPreview1404/lib/x64/Kinect20"
+#    -l"C:/ProgramFiles/Microsoft SDKs/Kinect/v2.0-DevPreview1404/lib/x64/Kinect20"
 # DEPENDPATH += $$PWD/.
 MOC_DIR = $$PWD/GeneratedFiles
 OBJECTS_DIR += debug
