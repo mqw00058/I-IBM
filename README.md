@@ -60,6 +60,6 @@
 
 ### Clone
 ```bash
-git clone https://github.com/<your-username>/I-IBM.git
+git clone https://github.com/mqw00058/I-IBM.git
 cd I-IBM
 ```
