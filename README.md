@@ -30,9 +30,9 @@
 - **Toolchain**: C++11 or higher (MSVC / Clang / GCC)
 
 ### Software Dependencies
-- **Qt** 5.x or 6.x (Widgets, Core, Gui)
-- **OpenMesh**
-- **OpenCV**
+- **Qt** ≥ 5.8 (Widgets, Core, Gui)
+- **OpenMesh** ≥ 3.1 (https://www.graphics.rwth-aachen.de/software/openmesh/download/) 
+- **OpenCV** ≥ 2.4.8
 - **Numerical Recipes** (License compliance required when using source/header)
 - **CMake ≥ 3.16** or **qmake** (either can be used for build)
 
