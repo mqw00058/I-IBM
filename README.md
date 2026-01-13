@@ -2,8 +2,6 @@
 **GUI-based 3D Surface Processing Tool**
 
 ![Alt Text](demo.gif)
-<br>
-<img src="demo.gif" />
 
 
 *Demo performing 3D surface visualization/processing in I-IBM interface.*
