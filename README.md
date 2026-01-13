@@ -1,12 +1,7 @@
 # I-IBM
 **GUI-based 3D Surface Processing Tool**
 
-<video src="demo.mp4"
-       autoplay
-       muted
-       loop
-       playsinline
-       width="720"></video>
+![Demo](demo.mp4)
 
 
 *Demo performing 3D surface visualization/processing in I-IBM interface.*
