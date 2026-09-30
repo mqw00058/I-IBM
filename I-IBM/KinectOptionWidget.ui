@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>KinectOptionWidget</class>
+ <widget class="QWidget" name="KinectOptionWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>KinectOptionWidget</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>60</y>
+     <width>151</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Connect Kinect</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>120</y>
+     <width>151</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Stop Kinect</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>KinectOptionWidget</receiver>
+   <slot>ConnectKinect()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>152</x>
+     <y>80</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>192</x>
+     <y>128</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>KinectOptionWidget</receiver>
+   <slot>StopKinect()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>145</x>
+     <y>129</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>220</x>
+     <y>175</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>ConnectKinect()</slot>
+  <slot>StopKinect()</slot>
+ </slots>
+</ui>

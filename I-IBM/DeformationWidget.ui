@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DeformationWidget</class>
+ <widget class="QWidget" name="DeformationWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>263</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DeformationWidget</string>
+  </property>
+  <layout class="QFormLayout" name="formLayout">
+   <property name="fieldGrowthPolicy">
+    <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+   </property>
+   <property name="horizontalSpacing">
+    <number>0</number>
+   </property>
+   <property name="verticalSpacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item row="0" column="1">
+    <layout class="QHBoxLayout" name="horizontalLayout0">
+     <item>
+      <widget class="QPushButton" name="pushButton_OpenXMLs">
+       <property name="text">
+        <string>Open XML Directory</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="1">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <item>
+      <widget class="QPushButton" name="deformMove">
+       <property name="text">
+        <string>Deform</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="deformSelButton">
+       <property name="text">
+        <string>Selection</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="deformGraphButton">
+       <property name="text">
+        <string>Graph</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="1">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="correspondenceButton">
+       <property name="maximumSize">
+        <size>
+         <width>130</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Correspondence</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="doDeformButton">
+       <property name="maximumSize">
+        <size>
+         <width>130</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Do Deformation</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="5" column="1">
+    <widget class="QCheckBox" name="check_drawgraph">
+     <property name="text">
+      <string>Show Graph</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="QPushButton" name="pushButton_SaveDeformedPointCloud">
+     <property name="text">
+      <string>Save Deformed Point Cloud</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>deformGraphButton</sender>
+   <signal>clicked()</signal>
+   <receiver>DeformationWidget</receiver>
+   <slot>gen_graph()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>261</x>
+     <y>48</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>252</x>
+     <y>112</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>deformSelButton</sender>
+   <signal>clicked()</signal>
+   <receiver>DeformationWidget</receiver>
+   <slot>mouse_pick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>172</x>
+     <y>48</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>181</x>
+     <y>152</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>deformMove</sender>
+   <signal>clicked()</signal>
+   <receiver>DeformationWidget</receiver>
+   <slot>mouse_deform()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>83</x>
+     <y>48</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>89</x>
+     <y>90</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>correspondenceButton</sender>
+   <signal>clicked()</signal>
+   <receiver>DeformationWidget</receiver>
+   <slot>slot_correspondence()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>121</x>
+     <y>73</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>123</x>
+     <y>232</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>doDeformButton</sender>
+   <signal>clicked()</signal>
+   <receiver>DeformationWidget</receiver>
+   <slot>slot_dodeform()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>261</x>
+     <y>73</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>28</x>
+     <y>213</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>check_drawgraph</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>DeformationWidget</receiver>
+   <slot>ONOFF_DrawGraph()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>9</x>
+     <y>90</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>28</x>
+     <y>87</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_SaveDeformedPointCloud</sender>
+   <signal>clicked()</signal>
+   <receiver>DeformationWidget</receiver>
+   <slot>slot_SaveDeformedPointCloud()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>34</x>
+     <y>113</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>72</x>
+     <y>124</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_OpenXMLs</sender>
+   <signal>clicked()</signal>
+   <receiver>DeformationWidget</receiver>
+   <slot>slot_OpenXMLDir()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>111</x>
+     <y>9</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>97</x>
+     <y>154</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>gen_graph()</slot>
+  <slot>mouse_pick()</slot>
+  <slot>mouse_deform()</slot>
+  <slot>select_currentModel()</slot>
+  <slot>slot_correspondence()</slot>
+  <slot>slot_dodeform()</slot>
+  <slot>ONOFF_DrawGraph()</slot>
+  <slot>slot_SaveDeformedPointCloud()</slot>
+  <slot>slot_OpenXMLDir()</slot>
+ </slots>
+</ui>

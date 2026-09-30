@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\MemoryLeakDetector\DebugNew.cpp">
+      <Filter>Memory LeakDetector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MemoryLeakDetector\MemoryLeak.cpp">
+      <Filter>Memory LeakDetector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Kinect\Microsoft_grabber2.cpp">
+      <Filter>Kinect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Kinect\Mode.cpp">
+      <Filter>Kinect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Kinect\NLMFilter.cpp">
+      <Filter>Kinect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Geometry3D\Geo3DMesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Point\Geo3DPoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="globals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GLWidget\GLOptionWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KinectOptionWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Logview\logviewdockwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VisionWidget\VisionWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EmbeddedDeform\DeformableMesh3d.cpp">
+      <Filter>Embedded Deform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EmbeddedDeform\DeformationGraph.cpp">
+      <Filter>Embedded Deform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EmbeddedDeform\GaussNewtonSolver.cpp">
+      <Filter>Embedded Deform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EmbeddedDeform\genGraphDialog.cpp">
+      <Filter>Embedded Deform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EmbeddedDeform\uniform_triangulation.cpp">
+      <Filter>Embedded Deform</Filter>
+    </ClCompile>
+    <ClCompile Include="CorrespondenceOpenCV.cpp">
+      <Filter>Embedded Deform</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_GLOptionWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_logviewdockwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_mainwindow.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_KinectOptionWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_genGraphDialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_IIBM.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeformationWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_DeformationWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PoissonRecon\CmdLineParser.cpp">
+      <Filter>PoissonRecon</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PoissonRecon\Factor.cpp">
+      <Filter>PoissonRecon</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PoissonRecon\Geometry.cpp">
+      <Filter>PoissonRecon</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PoissonRecon\MarchingCubes.cpp">
+      <Filter>PoissonRecon</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PoissonRecon\PlyFile.cpp">
+      <Filter>PoissonRecon</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PoissonRecon\Time.cpp">
+      <Filter>PoissonRecon</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshRecon.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PBM\ImpicitSurfaceReconstruction\MarchingCubes\Cube.cpp">
+      <Filter>MarchingCube</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PBM\ImpicitSurfaceReconstruction\MarchingCubes\define.cpp">
+      <Filter>MarchingCube</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PBM\ImpicitSurfaceReconstruction\MarchingCubes\Edge.cpp">
+      <Filter>MarchingCube</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PBM\ImpicitSurfaceReconstruction\MarchingCubes\eigsrt.cpp">
+      <Filter>MarchingCube</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PBM\ImpicitSurfaceReconstruction\MarchingCubes\Graph.cpp">
+      <Filter>MarchingCube</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PBM\ImpicitSurfaceReconstruction\MarchingCubes\jacobi.cpp">
+      <Filter>MarchingCube</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PBM\ImpicitSurfaceReconstruction\MarchingCubes\Kruskal.cpp">
+      <Filter>MarchingCube</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PBM\ImpicitSurfaceReconstruction\MarchingCubes\Node.cpp">
+      <Filter>MarchingCube</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PBM\ImpicitSurfaceReconstruction\MarchingCubes\plyfile.c">
+      <Filter>MarchingCube</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PBM\ImpicitSurfaceReconstruction\MarchingCubes\Point.cpp">
+      <Filter>MarchingCube</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PBM\ImpicitSurfaceReconstruction\MarchingCubes\Vector3f.cpp">
+      <Filter>MarchingCube</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NR\EigenSolver.cpp">
+      <Filter>NR</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NR\MatrixEq.cpp">
+      <Filter>NR</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NR\NR.cpp">
+      <Filter>NR</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NR\NR_EigenJacobi.cpp">
+      <Filter>NR</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NR\NR_Matrix.cpp">
+      <Filter>NR</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PBM\ImpicitSurfaceReconstruction\MarchingCubes\MarchingCube.cpp">
+      <Filter>MarchingCube</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PBM\ImpicitSurfaceReconstruction\ImplicitSurfaceReconstruction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GLWidget\GLWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_GLWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\MemoryLeakDetector\DebugNew.h">
+      <Filter>Memory LeakDetector</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\MemoryLeakDetector\MemoryLeak.h">
+      <Filter>Memory LeakDetector</Filter>
+    </CustomBuild>
+    <CustomBuild Include="KinectOptionWidget.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Geometry3D\Geometry3D.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\GLWidget\gl.hh">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="globals.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\GLWidget\GLOptionWidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\GLWidget\GLWidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="KinectOptionWidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Logview\logviewdockwidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\VisionWidget\VisionWidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Kinect\Mode.h">
+      <Filter>Kinect</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Kinect\NLMFilter.h">
+      <Filter>Kinect</Filter>
+    </CustomBuild>
+    <CustomBuild Include="IIBM.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="images\copy.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="images\cut.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="images\new.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="images\open.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="images\paste.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="images\save.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\Kinect\Microsoft_grabber2.h">
+      <Filter>Kinect</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\EmbeddedDeform\debugtrace.h">
+      <Filter>Embedded Deform</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\EmbeddedDeform\DeformableMesh3d.h">
+      <Filter>Embedded Deform</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\EmbeddedDeform\DeformationGraph.h">
+      <Filter>Embedded Deform</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\EmbeddedDeform\GaussNewtonSolver.h">
+      <Filter>Embedded Deform</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\EmbeddedDeform\math\matrix3d.h">
+      <Filter>Embedded Deform\math</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\EmbeddedDeform\math\point3d.h">
+      <Filter>Embedded Deform\math</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\EmbeddedDeform\math\SparseMatrix.h">
+      <Filter>Embedded Deform\math</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\EmbeddedDeform\math\vector3d.h">
+      <Filter>Embedded Deform\math</Filter>
+    </CustomBuild>
+    <CustomBuild Include="DeformationWidget.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\EmbeddedDeform\genGraphDialog.h">
+      <Filter>Embedded Deform</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui_KinectOptionWidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="resource.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="DeformationWidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Kinect">
+      <UniqueIdentifier>{72496118-364b-4205-bb90-1aae67c11d21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory LeakDetector">
+      <UniqueIdentifier>{5d0814df-aa1a-4593-af5b-756f127bcafd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Embedded Deform">
+      <UniqueIdentifier>{966e6608-dbf2-4f49-ad09-a7c01751c66d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Embedded Deform\math">
+      <UniqueIdentifier>{51a36325-e72a-4b83-9ff2-1d0362af8f92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{438f39c7-0ca2-4c66-ae49-fc3e9cbf7a3b}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{26375834-76be-4631-a608-0983f38393b0}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="PoissonRecon">
+      <UniqueIdentifier>{c0fb455d-08f3-4ae4-9546-3a1b9a9b9cf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MarchingCube">
+      <UniqueIdentifier>{89b7f29b-1130-4a7c-8a06-87dc8fab6e64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NR">
+      <UniqueIdentifier>{db7b7c93-2a0c-4b30-96be-55a8ef5790c3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="I-IBM.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\EmbeddedDeform\uniform_triangulation.h">
+      <Filter>Embedded Deform</Filter>
+    </ClInclude>
+    <ClInclude Include="CorrespondenceOpenCV.h">
+      <Filter>Embedded Deform</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_KinectOptionWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_DeformationWidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PoissonRecon\Allocator.h">
+      <Filter>PoissonRecon</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PoissonRecon\Array.h">
+      <Filter>PoissonRecon</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PoissonRecon\BinaryNode.h">
+      <Filter>PoissonRecon</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PoissonRecon\BSplineData.h">
+      <Filter>PoissonRecon</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PoissonRecon\CmdLineParser.h">
+      <Filter>PoissonRecon</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PoissonRecon\Factor.h">
+      <Filter>PoissonRecon</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PoissonRecon\FunctionData.h">
+      <Filter>PoissonRecon</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PoissonRecon\Geometry.h">
+      <Filter>PoissonRecon</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PoissonRecon\Hash.h">
+      <Filter>PoissonRecon</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PoissonRecon\MarchingCubes.h">
+      <Filter>PoissonRecon</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PoissonRecon\MAT.h">
+      <Filter>PoissonRecon</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PoissonRecon\MemoryUsage.h">
+      <Filter>PoissonRecon</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PoissonRecon\MultiGridOctreeData.h">
+      <Filter>PoissonRecon</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PoissonRecon\Octree.h">
+      <Filter>PoissonRecon</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PoissonRecon\Ply.h">
+      <Filter>PoissonRecon</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PoissonRecon\PointStream.h">
+      <Filter>PoissonRecon</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PoissonRecon\Polynomial.h">
+      <Filter>PoissonRecon</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PoissonRecon\PPolynomial.h">
+      <Filter>PoissonRecon</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PoissonRecon\SparseMatrix.h">
+      <Filter>PoissonRecon</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PoissonRecon\Time.h">
+      <Filter>PoissonRecon</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PoissonRecon\Vector.h">
+      <Filter>PoissonRecon</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshRecon.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PBM\ImpicitSurfaceReconstruction\MarchingCubes\Cube.h">
+      <Filter>MarchingCube</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PBM\ImpicitSurfaceReconstruction\MarchingCubes\define.h">
+      <Filter>MarchingCube</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PBM\ImpicitSurfaceReconstruction\MarchingCubes\Edge.h">
+      <Filter>MarchingCube</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PBM\ImpicitSurfaceReconstruction\MarchingCubes\Graph.h">
+      <Filter>MarchingCube</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PBM\ImpicitSurfaceReconstruction\MarchingCubes\Kruskal.h">
+      <Filter>MarchingCube</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PBM\ImpicitSurfaceReconstruction\MarchingCubes\Node.h">
+      <Filter>MarchingCube</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PBM\ImpicitSurfaceReconstruction\MarchingCubes\nr.h">
+      <Filter>MarchingCube</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PBM\ImpicitSurfaceReconstruction\MarchingCubes\nrtypes.h">
+      <Filter>MarchingCube</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PBM\ImpicitSurfaceReconstruction\MarchingCubes\nrtypes_nr.h">
+      <Filter>MarchingCube</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PBM\ImpicitSurfaceReconstruction\MarchingCubes\nrutil.h">
+      <Filter>MarchingCube</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PBM\ImpicitSurfaceReconstruction\MarchingCubes\nrutil_nr.h">
+      <Filter>MarchingCube</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PBM\ImpicitSurfaceReconstruction\MarchingCubes\ply.h">
+      <Filter>MarchingCube</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PBM\ImpicitSurfaceReconstruction\MarchingCubes\Point.h">
+      <Filter>MarchingCube</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PBM\ImpicitSurfaceReconstruction\MarchingCubes\Vector3f.h">
+      <Filter>MarchingCube</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NR\EigenSolver.h">
+      <Filter>NR</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NR\kdtree.h">
+      <Filter>NR</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NR\MatrixEq.h">
+      <Filter>NR</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NR\NR.h">
+      <Filter>NR</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NR\NR_EigenJacobi.h">
+      <Filter>NR</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NR\NR_Matrix.h">
+      <Filter>NR</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NR\nr3.h">
+      <Filter>NR</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NR\pointbox.h">
+      <Filter>NR</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PBM\ImpicitSurfaceReconstruction\MarchingCubes\MarchingCube.h">
+      <Filter>MarchingCube</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PBM\ImpicitSurfaceReconstruction\ImplicitSurfaceReconstruction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\PoissonRecon\Array.inl">
+      <Filter>PoissonRecon</Filter>
+    </None>
+    <None Include="src\PoissonRecon\BSplineData.inl">
+      <Filter>PoissonRecon</Filter>
+    </None>
+    <None Include="src\PoissonRecon\CmdLineParser.inl">
+      <Filter>PoissonRecon</Filter>
+    </None>
+    <None Include="src\PoissonRecon\FunctionData.inl">
+      <Filter>PoissonRecon</Filter>
+    </None>
+    <None Include="src\PoissonRecon\Geometry.inl">
+      <Filter>PoissonRecon</Filter>
+    </None>
+    <None Include="src\PoissonRecon\MAT.inl">
+      <Filter>PoissonRecon</Filter>
+    </None>
+    <None Include="src\PoissonRecon\MultiGridOctreeData.inl">
+      <Filter>PoissonRecon</Filter>
+    </None>
+    <None Include="src\PoissonRecon\MultiGridOctreeData.IsoSurface.inl">
+      <Filter>PoissonRecon</Filter>
+    </None>
+    <None Include="src\PoissonRecon\MultiGridOctreeData.SortedTreeNodes.inl">
+      <Filter>PoissonRecon</Filter>
+    </None>
+    <None Include="src\PoissonRecon\Octree.inl">
+      <Filter>PoissonRecon</Filter>
+    </None>
+    <None Include="src\PoissonRecon\PointStream.inl">
+      <Filter>PoissonRecon</Filter>
+    </None>
+    <None Include="src\PoissonRecon\Polynomial.inl">
+      <Filter>PoissonRecon</Filter>
+    </None>
+    <None Include="src\PoissonRecon\PPolynomial.inl">
+      <Filter>PoissonRecon</Filter>
+    </None>
+    <None Include="src\PoissonRecon\SparseMatrix.inl">
+      <Filter>PoissonRecon</Filter>
+    </None>
+    <None Include="src\PoissonRecon\Vector.inl">
+      <Filter>PoissonRecon</Filter>
+    </None>
+  </ItemGroup>
+</Project>
