@@ -1,0 +1,143 @@
+# I-IBM2 (Linux build)
+
+**GUI-based 3D surface processing tool — full-featured I-IBM2 version, ported to Linux**
+
+![I-IBM demo](https://github.com/mqw00058/I-IBM/blob/main/demo.gif?raw=true)
+
+*Demo from the `main` branch.*
+
+---
+
+## About this branch
+
+`i-ibm2-linux` contains the **full I-IBM2 source (2014–2017)**, recovered from the original development disk, with the changes needed to build and run it on Linux.
+
+| | `main` | `i-ibm2-linux` (this branch) |
+|---|---|---|
+| Source | Trimmed subset | Full I-IBM2 app |
+| Qt | Qt 6, `QOpenGLWidget` | Qt 5.15, `QGLWidget` |
+| Embedded deformation, texture mapping, correspondence | – | ✓ |
+| Surface reconstruction (Hoppe, SDF) | partial | ✓ |
+| Kinect v2 capture | – | Windows only (excluded from the Linux build) |
+| Target platform | Windows (MSVC) | Linux (GCC); Windows/VS2013 project files kept |
+
+The two branches have unrelated histories and are not merged.
+
+---
+
+## Features
+
+- **3D mesh visualization**: vertex / edge / face / normal / bounding-box toggles per model, flat & smooth shading, texture display
+- **Selection & editing**: point and face selection modes, delete selected elements
+- **Filtering**: bilateral mesh filtering
+- **Surface reconstruction from points**:
+  - Hoppe-style implicit surface (normal estimation with PCL + marching cubes)
+  - SDF file (`v x y z vn nx ny nz s sdf`) → marching cubes
+  - Screened Poisson reconstruction: a `MeshRecon::PoissonRecon` wrapper around the bundled PoissonRecon is compiled, but its call in the deformation workflow is commented out in the original code
+- **Embedded deformation** (Sumner et al.): deformation graph + Gauss-Newton solver using SuiteSparse CHOLMOD
+- **Multi-texture mapping** from OBJ/MTL and **correspondence correction** (OpenCV FLANN)
+- **Kinect v2 live capture**: Windows only (Kinect for Windows SDK 2.0)
+- Scene options: workspace grid, axis, scene-wide bounding boxes, log view
+
+---
+
+## Build on Linux
+
+Tested on **Ubuntu 24.04**, GCC 13.3, Qt 5.15.13.
+
+### 1. Dependencies
+
+```bash
+sudo apt install -y build-essential qtbase5-dev libopencv-dev libsuitesparse-dev \
+    freeglut3-dev libglu1-mesa-dev libpcl-dev libeigen3-dev libboost-filesystem-dev
+```
+
+| Library | Version tested | Used for |
+|---|---|---|
+| Qt | 5.15 (Core, Gui, Widgets, OpenGL) | GUI, `QGLWidget` rendering |
+| OpenMesh | 3.1 (bundled in `3rdparty/`) | Mesh data structures |
+| OpenCV | 4.6 | Images, textures, FLANN |
+| PCL | 1.14 | Normal estimation |
+| SuiteSparse (CHOLMOD) | 7.6 | Embedded-deformation solver |
+| freeglut / GLU | 3.4 | OpenGL helpers |
+
+### 2. Build
+
+```bash
+./build_linux.sh
+```
+
+The script:
+1. builds the bundled OpenMesh 3.1 as a static library (`3rdparty/OpenMesh-3.1/lib/libOpenMesh.a`), skipped if it already exists
+2. runs `qmake I-IBM/I-IBM_linux.pro` and `make`
+
+The executable is written to `bin/I-IBM`.
+
+### 3. Run
+
+```bash
+./bin/I-IBM
+```
+
+Open a mesh with **File → Open** (`Ctrl+O`). Supported formats are those of OpenMesh (OBJ, OFF, PLY, STL, OM). A sample mesh (`fandisk.obj`) is in `example_data/` on the `main` branch.
+
+---
+
+## Build on Windows
+
+The original Visual Studio 2013 solution (`I-IBM.sln`, `I-IBM/I-IBM.vcxproj`) is kept unchanged apart from the shared source fixes. It expects Qt 5 (MSVC x64), OpenCV 2.4.9, PCL 1.7.2, SuiteSparse (suitesparse-metis-for-windows), and the Kinect for Windows SDK 2.0 at the paths configured in the project. The Linux-only changes are guarded by `#ifndef _WIN32` / `#ifdef _WIN32`, so the Windows build keeps Kinect support.
+
+---
+
+## Linux port: what changed
+
+The port keeps the original code wherever possible. Run `git diff 46a7ed0` to see every change relative to the imported original source.
+
+- **`I-IBM/I-IBM_linux.pro`**: qmake project whose source list comes from `I-IBM.vcxproj`. It uses `object_parallel_to_source`, because `plyfile.c` and `PlyFile.cpp` would otherwise produce the same object name on case-insensitive filesystems (SMB, exFAT).
+- **`I-IBM/linux_compat.h`** (force-included): standard headers that MSVC included implicitly, `stdext::hash_map`, Windows typedefs (`BYTE`, `UINT`, `TRUE`, …), OpenCV 4 C-API headers, `#undef MAX/MIN`.
+- **Include paths**: case and backslash fixes. The bundled Windows `GL/` headers moved to `GL_win32/`, so the system OpenGL and GLUT headers are used.
+- **Template code**: added missing `typename` (GCC enforces two-phase lookup) in `BilateralFilter.cc` and `MeshClean.cc`, and fixed a few typos that MSVC never compiled.
+- **PLY libraries**: the MarchingCubes copy of the Turk PLY library is renamed with an `mc_` prefix (`ply_mc_rename*.h`) so it can link alongside PoissonRecon's copy.
+- **Kinect**: the live view, menu and option dock are `#ifdef _WIN32`. The global grabber uses `src/Kinect/KinectGrabberStub.h` on Linux.
+- **Icons**: all images are compiled into the Qt resource file (`IIBM.qrc`, `:/images/...`) instead of being loaded from the working directory. New menu icons are generated by `I-IBM/images/make_icons.py`.
+- **Show Bounding Box**: the scene checkbox now works. It was connected to a slot with an incompatible signature.
+
+---
+
+## Repository layout
+
+```
+.
+├── build_linux.sh              # Linux build script
+├── I-IBM.sln                   # Visual Studio 2013 solution (Windows)
+├── 3rdparty/OpenMesh-3.1/      # bundled OpenMesh sources
+└── I-IBM/
+    ├── I-IBM_linux.pro         # Linux qmake project
+    ├── I-IBM.vcxproj           # Windows project
+    ├── linux_compat.h
+    ├── main.cpp, mainwindow.*  # application window, menus
+    ├── DeformationWidget.*     # embedded deformation / texture / correspondence UI
+    ├── images/                 # icons (+ make_icons.py)
+    └── src/
+        ├── GLWidget/           # OpenGL view and render options
+        ├── Geometry3D/         # mesh model (OpenMesh), texture handling
+        ├── EmbeddedDeform/     # deformation graph, Gauss-Newton solver
+        ├── PBM/                # point-based methods: filtering, features, implicit reconstruction
+        ├── PoissonRecon/       # screened Poisson reconstruction
+        ├── NR/                 # numerical routines
+        └── Kinect/             # Kinect v2 grabber (Windows) + Linux stub
+```
+
+---
+
+## Known limitations
+
+- Kinect v2 capture is not available on Linux.
+- Only the GUI startup has been tested on Linux. Individual processing features (deformation, reconstruction, texturing) have not been systematically re-validated after the port.
+- `Numerical Recipes` code is included. Check its license before redistributing.
+
+---
+
+## Author
+
+In Yeop Jang, KIST (2012–2017).
