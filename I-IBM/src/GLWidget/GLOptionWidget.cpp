@@ -198,11 +198,11 @@ void GLOptionWidget::CreateModelListItem(int modelnumber, QString modelname)
 
 
 	QToolBar* rendertb = new QToolBar();
-	QAction* action1 = new QAction(QIcon("./images/bbox.png"), "BoundingBox", rendertb);
-	QAction* action2 = new QAction(QIcon("./images/vertex.png"), "Vertex", rendertb);
-	QAction* action3 = new QAction(QIcon("./images/edge.png"), "Edge", rendertb);
-	QAction* action4 = new QAction(QIcon("./images/face.png"), "Face", rendertb);
-	QAction* action5 = new QAction(QIcon("./images/normal.png"), "Normal", rendertb);
+	QAction* action1 = new QAction(QIcon(":/images/bbox.png"), "BoundingBox", rendertb);
+	QAction* action2 = new QAction(QIcon(":/images/vertex.png"), "Vertex", rendertb);
+	QAction* action3 = new QAction(QIcon(":/images/edge.png"), "Edge", rendertb);
+	QAction* action4 = new QAction(QIcon(":/images/face.png"), "Face", rendertb);
+	QAction* action5 = new QAction(QIcon(":/images/normal.png"), "Normal", rendertb);
 
 	action1->setCheckable(true);
 	action2->setCheckable(true);
@@ -277,8 +277,8 @@ void GLOptionWidget::CreateModelViewOptions(QWidget  * ModelViewVerticalLayoutWi
 	QHBoxLayout *ModelRenderOptionLayout = new QHBoxLayout();
 	QPushButton *bSmoothFlatButton = new QPushButton();	
 	QIcon *ico = new QIcon();
-	ico->addPixmap(QPixmap("./images/smooth.png"), QIcon::Normal, QIcon::On);
-	ico->addPixmap(QPixmap("./images/face.png"), QIcon::Normal, QIcon::Off);
+	ico->addPixmap(QPixmap(":/images/smooth.png"), QIcon::Normal, QIcon::On);
+	ico->addPixmap(QPixmap(":/images/face.png"), QIcon::Normal, QIcon::Off);
 	bSmoothFlatButton->setIcon(*ico);
 	bSmoothFlatButton->setMaximumSize(40, 40);
 	bSmoothFlatButton->setIconSize(QSize(32, 32));
@@ -289,7 +289,7 @@ void GLOptionWidget::CreateModelViewOptions(QWidget  * ModelViewVerticalLayoutWi
 
 	QPushButton *bTextureButton = new QPushButton();
 	QIcon *ico11 = new QIcon(); 
-	ico11->addFile("./images/textures.png", QSize(32, 32));
+	ico11->addFile(":/images/textures.png", QSize(32, 32));
 	bTextureButton->setMaximumSize(40, 40);
 	bTextureButton->setIconSize(QSize(32, 32));
 	bTextureButton->setIcon(*ico11);
@@ -313,7 +313,7 @@ void GLOptionWidget::CreateModelSelectionOptions(QWidget  * ModelViewVerticalLay
 {
 
 	QIcon icon[3];
-	icon[0].addFile(QString::fromUtf8("./images/select_vertex.png"), QSize(), QIcon::Normal, QIcon::Off);
+	icon[0].addFile(QString::fromUtf8(":/images/select_vertex.png"), QSize(), QIcon::Normal, QIcon::Off);
 	QPushButton *buttonSelectPoints = new QPushButton(ModelViewVerticalLayoutWidget2);
 	buttonSelectPoints->setMaximumSize(40, 40);
 	buttonSelectPoints->setIcon(icon[0]);
@@ -321,7 +321,7 @@ void GLOptionWidget::CreateModelSelectionOptions(QWidget  * ModelViewVerticalLay
 	buttonSelectPoints->setCheckable(true);
 
 
-	icon[1].addFile(QString::fromUtf8("./images/select_face.png"), QSize(), QIcon::Normal, QIcon::Off);
+	icon[1].addFile(QString::fromUtf8(":/images/select_face.png"), QSize(), QIcon::Normal, QIcon::Off);
 	QPushButton *buttonSelectFaces = new QPushButton(ModelViewVerticalLayoutWidget2);
 	buttonSelectFaces->setMaximumSize(40, 40);
 	buttonSelectFaces->setIcon(icon[1]);
@@ -329,7 +329,7 @@ void GLOptionWidget::CreateModelSelectionOptions(QWidget  * ModelViewVerticalLay
 	buttonSelectFaces->setCheckable(true);
 
 
-	icon[2].addFile(QString::fromUtf8("./images/delete_vert.png"), QSize(), QIcon::Normal, QIcon::Off);
+	icon[2].addFile(QString::fromUtf8(":/images/delete_facevert.png"), QSize(), QIcon::Normal, QIcon::Off);
 	QPushButton *buttonSelectEdgess = new QPushButton(ModelViewVerticalLayoutWidget2);
 	buttonSelectEdgess->setMaximumSize(40, 40);
 	buttonSelectEdgess->setIcon(icon[2]);

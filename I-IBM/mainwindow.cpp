@@ -231,56 +231,56 @@ void MainWindow::documentWasModified()
 void MainWindow::createActions()
 //! [17] //! [18]
 {
-	newAct = new QAction(QIcon("./images/new.png"), tr("&New"), this);
+	newAct = new QAction(QIcon(":/images/new.png"), tr("&New"), this);
 	newAct->setShortcuts(QKeySequence::New);
 	newAct->setStatusTip(tr("Create a new file"));
 	connect(newAct, SIGNAL(triggered()), this, SLOT(newFile()));
 
 	//! [19]
-	openAct = new QAction(QIcon("./images/open.png"), tr("&Open..."), this);
+	openAct = new QAction(QIcon(":/images/open.png"), tr("&Open..."), this);
 	openAct->setShortcuts(QKeySequence::Open);
 	openAct->setStatusTip(tr("Open an existing file"));
 	connect(openAct, SIGNAL(triggered()), this, SLOT(open()));
 	//! [18] //! [19]
 
-	saveAct = new QAction(QIcon("./images/save.png"), tr("&Save"), this);
+	saveAct = new QAction(QIcon(":/images/save.png"), tr("&Save"), this);
 	saveAct->setShortcuts(QKeySequence::Save);
 	saveAct->setStatusTip(tr("Save the document to disk"));
 	connect(saveAct, SIGNAL(triggered()), this, SLOT(save()));
 
-	saveAsAct = new QAction(tr("Save &As..."), this);
+	saveAsAct = new QAction(QIcon(":/images/save_as.png"), tr("Save &As..."), this);
 	saveAsAct->setShortcuts(QKeySequence::SaveAs);
 	saveAsAct->setStatusTip(tr("Save the document under a new name"));
 	connect(saveAsAct, SIGNAL(triggered()), this, SLOT(saveAs()));
 
 	//! [20]
-	exitAct = new QAction(tr("E&xit"), this);
+	exitAct = new QAction(QIcon(":/images/exit.png"), tr("E&xit"), this);
 	exitAct->setShortcuts(QKeySequence::Quit);
 	//! [20]
 	exitAct->setStatusTip(tr("Exit the application"));
 	connect(exitAct, SIGNAL(triggered()), this, SLOT(close()));
 
 	//! [21]
-	cutAct = new QAction(QIcon("./images/cut.png"), tr("Cu&t"), this);
+	cutAct = new QAction(QIcon(":/images/cut.png"), tr("Cu&t"), this);
 	//! [21]
 	cutAct->setShortcuts(QKeySequence::Cut);
 	cutAct->setStatusTip(tr("Cut the current selection's contents to the "
 		"clipboard"));
 	//    connect(cutAct, SIGNAL(triggered()), textEdit, SLOT(cut()));
 
-	copyAct = new QAction(QIcon("./images/copy.png"), tr("&Copy"), this);
+	copyAct = new QAction(QIcon(":/images/copy.png"), tr("&Copy"), this);
 	copyAct->setShortcuts(QKeySequence::Copy);
 	copyAct->setStatusTip(tr("Copy the current selection's contents to the "
 		"clipboard"));
 	// connect(copyAct, SIGNAL(triggered()), textEdit, SLOT(copy()));
 
-	pasteAct = new QAction(QIcon("./images/paste.png"), tr("&Paste"), this);
+	pasteAct = new QAction(QIcon(":/images/paste.png"), tr("&Paste"), this);
 	pasteAct->setShortcuts(QKeySequence::Paste);
 	pasteAct->setStatusTip(tr("Paste the clipboard's contents into the current "
 		"selection"));
 	// connect(pasteAct, SIGNAL(triggered()), textEdit, SLOT(paste()));
 
-	aboutAct = new QAction(tr("&About"), this);
+	aboutAct = new QAction(QIcon(":/images/about.png"), tr("&About"), this);
 	aboutAct->setStatusTip(tr("Show the application's About box"));
 	connect(aboutAct, SIGNAL(triggered()), this, SLOT(about()));
 
@@ -290,7 +290,7 @@ void MainWindow::createActions()
 	connect(aboutQtAct, SIGNAL(triggered()), qApp, SLOT(aboutQt()));
 	//! [22]
 
-	bilateralAct = new QAction(tr("&Bilateral filter"), this);
+	bilateralAct = new QAction(QIcon(":/images/bilateral_filter.png"), tr("&Bilateral filter"), this);
 	connect(bilateralAct, SIGNAL(triggered()), this, SLOT(bilateralfilter()));
 
 
@@ -302,16 +302,16 @@ void MainWindow::createActions()
 	// connect(textEdit, SIGNAL(copyAvailable(bool)), copyAct, SLOT(setEnabled(bool)));
 
 	//! [25]
-	implicitsurfacereconAction = new QAction(tr("&Hoppe"), this);
-	sdfsurfacereconAction = new QAction(tr("&SDF"), this);
+	implicitsurfacereconAction = new QAction(QIcon(":/images/recon_hoppe.png"), tr("&Hoppe"), this);
+	sdfsurfacereconAction = new QAction(QIcon(":/images/recon_sdf.png"), tr("&SDF"), this);
 
 	connect(implicitsurfacereconAction, SIGNAL(triggered()), this, SLOT(menu_implicitsurfacereconHOPPE()));
 	connect(sdfsurfacereconAction, SIGNAL(triggered()), this, SLOT(menu_implicitsurfacereconSDF()));
 
-	kinectAction = new QAction(tr("&Kinect"), this);
+	kinectAction = new QAction(QIcon(":/images/kinect.png"), tr("&Kinect"), this);
 	connect(kinectAction, SIGNAL(triggered()), this, SLOT(menu_Plugin_Kinect()));
 
-	deformationAct = new QAction(tr("Embedded &Deformation"), this);
+	deformationAct = new QAction(QIcon(":/images/deformation.png"), tr("Embedded &Deformation"), this);
 	connect(deformationAct, SIGNAL(triggered()), this, SLOT(embeddedDeformation()));
 }
 //! [24]
