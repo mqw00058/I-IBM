@@ -23,7 +23,7 @@
 
 
 //== INCLUDES =================================================================
-#include <src/pbm/Common/NormalEstimation.h>
+#include <src/PBM/Common/NormalEstimation.h>
 #include <OpenMesh/Core/Geometry/VectorT.hh>
 #include <OpenMesh/Core/Utils/vector_cast.hh>
 #include <OpenMesh/Core/Utils/Property.hh>
@@ -109,7 +109,7 @@ protected:
 //=============================================================================
 #if defined(OM_INCLUDE_TEMPLATES) && !defined(OPENMESH_PROPERTY_SALIENCY_CC)
 #define OPENMESH_PROPERTY_SALIENCY_HH
-#include "Saliency.cc"
+#include "saliency.cc"
 #endif
 //=============================================================================
 #endif // PBM_FEATURE_MultiScaleT_HH defined

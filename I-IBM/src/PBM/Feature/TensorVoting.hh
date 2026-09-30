@@ -43,7 +43,7 @@
 
 
 //== INCLUDES =================================================================
-#include <pbm/Common/NormalEstimation.h>
+#include <PBM/Common/NormalEstimation.h>
 
 
 #include <OpenMesh/Core/Geometry/VectorT.hh>

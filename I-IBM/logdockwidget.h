@@ -1,7 +1,7 @@
 #ifndef LOGDOCKWIDGET_H
 #define LOGDOCKWIDGET_H
 
-#include <QDockwidget>
+#include <QDockWidget>
 #include <QtGui/qtextedit.h>
 
 

@@ -1,5 +1,5 @@
 //#include "StdAfx.h"
-#include ".\nr_matrix.h"
+#include "NR_Matrix.h"
 
 void NR::gaussj(Mat_IO_DP &a, Mat_IO_DP &b)
 {

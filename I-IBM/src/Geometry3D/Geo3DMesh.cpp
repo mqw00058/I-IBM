@@ -224,7 +224,7 @@ void Geometry3D::LoadTextureFromObjFile(std::string objfilepath)
 #if defined(WIN32)
 	std::string::size_type dot = objfilepath.find_last_of("\\/");
 #else
-	std::string::size_type dot = _filename.rfind("/");
+	std::string::size_type dot = objfilepath.rfind("/");
 #endif
 	path_ = (dot == std::string::npos)
 		? "./"

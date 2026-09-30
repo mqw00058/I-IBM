@@ -1,3 +1,4 @@
+#include "ply_mc_rename_internal.h"
 /*
 
 The interface routines for reading and writing PLY polygon files.

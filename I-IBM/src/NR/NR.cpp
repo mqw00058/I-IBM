@@ -1,3 +1,3 @@
 //#include "StdAfx.h"
-#include ".\nr.h"
+#include "NR.h"
 

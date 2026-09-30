@@ -4,8 +4,8 @@
 #include <iostream>
 #include <fstream>
 
-#include <opencv2\opencv.hpp>	// OpenCV header file
-#include <gl\freeglut.h>		// OpenGL header files
+#include <opencv2/opencv.hpp>	// OpenCV header file
+#include <GL/freeglut.h>		// OpenGL header files
 #include "KinectBasic.h"
 #include "Mode.h"
 

@@ -1,7 +1,7 @@
 #pragma once
 
 
-#include <qDebug>
+#include <QDebug>
 //##########################################################################
 // NRVec Templete
 

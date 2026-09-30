@@ -23,6 +23,7 @@
 //== INCLUDES =================================================================
 
 
+#include <set>
 #include <OpenMesh/Core/Geometry/VectorT.hh>
 #include <OpenMesh/Core/Utils/vector_cast.hh>
 #include <OpenMesh/Core/Utils/Property.hh>

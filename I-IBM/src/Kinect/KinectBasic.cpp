@@ -1,4 +1,4 @@
-#include <gl\freeglut.h>		// OpenGL header files
+#include <GL/freeglut.h>		// OpenGL header files
 #include "KinectBasic.h"
 #include "NLMFilter.h"
 

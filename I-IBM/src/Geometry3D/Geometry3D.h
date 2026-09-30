@@ -79,11 +79,11 @@ using namespace std;
 #include <PBM/Feature/ColorTensorVoting.hh>
 
 // Filtering
-#include <pbm/Filtering/UmbrellaOperator.hh>
-#include <pbm/Filtering/MultiScaleJBF.hh>
+#include <PBM/Filtering/UmbrellaOperator.hh>
+#include <PBM/Filtering/MultiScaleJBF.hh>
 
 //Property
-#include <pbm/Property/curvature.hh>
+#include <PBM/Property/curvature.hh>
 
 */
 //--------------------- by In Yeop Jang

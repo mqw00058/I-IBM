@@ -7,7 +7,7 @@
 #ifndef _DEFINE_
 #define _DEFINE_
 
-#include <qDebug>
+#include <QDebug>
 
 #include <string>
 #include <vector>

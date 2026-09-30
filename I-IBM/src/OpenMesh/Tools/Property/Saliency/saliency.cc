@@ -42,7 +42,7 @@
 #define OPENMESH_PROPERTY_SALIENCY_CC
 
 //== INCLUDES =================================================================
-#include "Saliency.hh"
+#include "saliency.hh"
 
 //== NAMESPACES ===============================================================
 

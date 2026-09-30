@@ -5,7 +5,7 @@
 //#include <pcl/features/normal_3d.h>
 #define NOMINMAX
 
-#include "src/GLWidget/GLOptionwidget.h"
+#include "src/GLWidget/GLOptionWidget.h"
 
 #include "src/EmbeddedDeform/genGraphDialog.h"
 #include "src/EmbeddedDeform/uniform_triangulation.h"
@@ -155,7 +155,7 @@ void DeformationWidget::slot_OpenXMLDir()
 			cv::Mat image = cv::imread(texpath.toStdString());
 			//cv::imshow("a", image);
 			int size = image.total() * image.elemSize();
-			mygeom->m_texture = new byte[size];  // you will have to delete[] that later
+			mygeom->m_texture = new BYTE[size];  // you will have to delete[] that later
 			mygeom->m_texture_height = image.cols;
 			mygeom->m_texture_width = image.rows;
 			std::memcpy(mygeom->m_texture, image.data, size * sizeof(byte));

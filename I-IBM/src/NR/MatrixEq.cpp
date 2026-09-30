@@ -1,5 +1,5 @@
 //#include "StdAfx.h"
-#include ".\MatrixEq.h"
+#include "MatrixEq.h"
 
 namespace NR{
 	MatrixEq::MatrixEq(void)

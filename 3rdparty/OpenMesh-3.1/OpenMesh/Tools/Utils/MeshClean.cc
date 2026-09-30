@@ -80,8 +80,8 @@ findIrregularTriangles(std::set<int> &irregularfacelist)
 	OpenMesh::Vec3f		vec0, vec1;
 
 	OpenMesh::HalfedgeHandle heh;
-	OpenMesh::FaceIter f_it, f_end(mesh_.faces_end());
-	OpenMesh::FaceHalfedgeIter fh_it;
+	typename Mesh::FaceIter f_it, f_end(mesh_.faces_end());
+	typename Mesh::FaceHalfedgeIter fh_it;
 
 
 	float tri_len_a = 0.0, tri_len_b = 0.0, tri_len_c = 0.0, p = 0.0, s = 0.0, r = 0.0, l = 0.0, w = 0.0;
@@ -131,7 +131,7 @@ findIrregularTriangles(std::set<int> &irregularfacelist)
 		//                                                                              //
 		//r=l^2/4*pi*w => l:»ï°¢Çü µÑ·¹ ±æÀÌ(tr_abc), w:¿øÀÇ ³ÐÀÌ(¿©±â¼­´Â »ï°¢Çü³ÐÀÌ:s)//
 		//////////////////////////////////////////////////////////////////////////////////
-		r = (tr_len_a + tr_len_b + tr_len_c)*(tr_len_a + tr_len_b + tr_len_c) / (4 * 3.14*s);
+		r = (tri_len_a + tri_len_b + tri_len_c)*(tri_len_a + tri_len_b + tri_len_c) / (4 * 3.14*s);
 
 	}
 
@@ -150,7 +150,7 @@ std::pair<int, int> MeshCleanT<Mesh>::RemoveSmallConnectedComponentsSize(int max
 		{
 			for (std::set<int>::iterator it = CCF[i].begin(); it != CCF[i].end(); ++it)
 			{
-				Mesh::FaceHandle ff_h(*it);
+				typename Mesh::FaceHandle ff_h(*it);
 				if (mesh_.is_valid_handle(ff_h))
 				{
 					mesh_.delete_face(ff_h);
@@ -167,7 +167,7 @@ template <class Mesh>
 int MeshCleanT<Mesh>::ConnectedComponents(std::vector < std::set<int>> &CCF)
 {
 
-	Mesh::FaceIter fit;	
+	typename Mesh::FaceIter fit;	
 	
 
 	CCF.clear();
@@ -183,13 +183,13 @@ int MeshCleanT<Mesh>::ConnectedComponents(std::vector < std::set<int>> &CCF)
 			while (!sf.empty())
 			{
 				int index = sf.top();
-				Mesh::FaceHandle f_h(index);
+				typename Mesh::FaceHandle f_h(index);
 
 				CCF.back().insert(f_h.idx());
 				mesh_.status(f_h).set_tagged(true);
 				sf.pop();
 
-				for (Mesh::FFIter ff_it = mesh_.ff_iter(f_h); ff_it; ++ff_it)
+				for (typename Mesh::FFIter ff_it = mesh_.ff_iter(f_h); ff_it; ++ff_it)
 				{
 					{
 						if (!mesh_.status(ff_it).tagged())

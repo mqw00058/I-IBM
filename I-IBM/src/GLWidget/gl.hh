@@ -54,7 +54,7 @@
 #  include <OpenGL/glu.h>
 #endif
 
-#include <OpenMesh\Core\Geometry/VectorT.hh>
+#include <OpenMesh/Core/Geometry/VectorT.hh>
 
 //=============================================================================
 namespace GL {

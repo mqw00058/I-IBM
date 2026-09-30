@@ -1,3 +1,4 @@
+#include "ply_mc_rename.h"
 /*
 
 Header for PLY polygon files.

@@ -4,9 +4,14 @@
 #include <QWidget>
 #include "ui_KinectOptionWidget.h"
 #include "../../globals.h"
+#ifdef _WIN32
 #include <opencv2/contrib/contrib.hpp>
 //#include <Kinect/Mode.h>
 #include <winnt.h>
+#else
+#include <opencv2/opencv.hpp>
+typedef void* HANDLE;
+#endif
 
 #include <QTimer>
 

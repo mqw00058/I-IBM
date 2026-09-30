@@ -687,6 +687,7 @@ void GLWidget::paintGL()
 	}
 
 
+#ifdef _WIN32 // Kinect v2 live view (Windows only)
 	if (bConnectionKinect)
 	{
 		//EnterCriticalSection(&(kinect.mCriticalSection)); 
@@ -761,6 +762,7 @@ void GLWidget::paintGL()
 		//LeaveCriticalSection(&(kinect.mCriticalSection));
 		//updateGL();
 	}
+#endif
 
 	glPopMatrix();
 	glFlush();

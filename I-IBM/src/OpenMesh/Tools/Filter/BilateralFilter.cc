@@ -43,7 +43,7 @@
 
 //== INCLUDES =================================================================
 #include "BilateralFilter.hh"
-#include <pbm/Common/NormalEstimation.h>
+#include <PBM/Common/NormalEstimation.h>
 
 //== NAMESPACES ===============================================================
 
@@ -77,7 +77,7 @@ template <class Mesh>
 void BilateralFilterT<Mesh>::initialize()
 {
 	// geometry property setting
-	Mesh::VertexIter	v_it, v_end(mesh_.vertices_end());
+	typename Mesh::VertexIter	v_it, v_end(mesh_.vertices_end());
 	for(v_it=mesh_.vertices_begin(); v_it!=v_end; ++v_it){
 		point_set.push_back(mesh_.point(v_it));
 	}	
@@ -113,7 +113,7 @@ void BilateralFilterT<Mesh>::Jones_filter(VertexHandle v_it,
 
 	flag_curr++;
 
-	Mesh::VertexFaceIter vf_it;
+	typename Mesh::VertexFaceIter vf_it;
 
 	vector<unsigned> support;
 	// 1-ring
@@ -137,7 +137,7 @@ void BilateralFilterT<Mesh>::Jones_filter(VertexHandle v_it,
 		Point p0, p1, p2, c;
 
 		FaceHandle fh = mesh_.face_handle(f);
-		Mesh::ConstFaceVertexIter cfvIt = mesh_.cfv_iter(fh);
+		typename Mesh::ConstFaceVertexIter cfvIt = mesh_.cfv_iter(fh);
 		p0 = mesh_.point(cfvIt.handle());
 		v0 = cfvIt.handle().idx();
 		p1 = mesh_.point((++cfvIt).handle());
@@ -171,7 +171,7 @@ void BilateralFilterT<Mesh>::Jones_filter(VertexHandle v_it,
 		}
 
 		// for adjacent faces of a face
-		Mesh::FaceFaceIter ff_it;
+		typename Mesh::FaceFaceIter ff_it;
 
 		for(ff_it = mesh_.ff_iter(fh);ff_it;++ff_it){
 
@@ -213,7 +213,7 @@ void BilateralFilterT<Mesh>::Jones_bFilter()
 	truncate = 4*sigma1*sigma1;
 
 
-	Mesh::ConstVertexIter	v_it, v_end(mesh_.vertices_end());
+	typename Mesh::ConstVertexIter	v_it, v_end(mesh_.vertices_end());
 
 	vector<unsigned> flags(nf);
 	unsigned flag_curr = 0;
@@ -242,19 +242,16 @@ void BilateralFilterT<Mesh>::Fleishman_filter(VertexHandle vh)
 	float invsigma2_1;
 	float invsigma2_2;
 	
-	VertexHandle vh;
-
-	mesh_.face_handle
 
 	// 1. compute the vertex normal
 	Point p = mesh_.point(vh);
 	Vec3f n(0.f,0.f,0.f);
-	Mesh::ConstVertexFaceIter vf_it;
+	typename Mesh::ConstVertexFaceIter vf_it;
 
 	for(vf_it = mesh_.cvf_iter(vh); vf_it; ++vf_it)
 	{
 		Point p0, p1, p2;
-		Mesh::ConstFaceVertexIter cfvIt = mesh_.cfv_iter(vf_it.handle());
+		typename Mesh::ConstFaceVertexIter cfvIt = mesh_.cfv_iter(vf_it.handle());
 		p0 = mesh_.point(cfvIt.handle());
 		p1 = mesh_.point((++cfvIt).handle());
 		p2 = mesh_.point((++cfvIt).handle());
@@ -311,7 +308,7 @@ void BilateralFilterT<Mesh>::Fleishman_filter(VertexHandle vh)
 template <class Mesh>
 void BilateralFilterT<Mesh>::Fleishman_bFilter(int iter)
 {
-	Mesh::ConstVertexIter	v_it, v_end(mesh_.vertices_end());
+	typename Mesh::ConstVertexIter	v_it, v_end(mesh_.vertices_end());
 	VertexHandle	vh, vhq;
 	Point			p, q;
 	Vec3f			dp, n;

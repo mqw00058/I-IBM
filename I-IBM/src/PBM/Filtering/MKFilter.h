@@ -6,7 +6,7 @@
 //   $Created by Min Ki Park (minkp@gist.ac.kr)
 //=============================================================================
 #pragma once
-#include <src/pbm/Common/NormalEstimation.h>
+#include <src/PBM/Common/NormalEstimation.h>
 #include <OpenMesh/Core/Geometry/VectorT.hh>
 #include <OpenMesh/Core/Utils/vector_cast.hh>
 #include <OpenMesh/Core/Utils/Property.hh>

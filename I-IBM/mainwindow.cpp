@@ -42,14 +42,16 @@
 #include <QtGui>
 
 
-#include "src/GLWidget/GLOptionwidget.h"
+#include "src/GLWidget/GLOptionWidget.h"
 #include "src/VisionWidget/VisionWidget.h"
 #include "src/Geometry3D/Geometry3D.h"
+#ifdef _WIN32
 #include "KinectOptionWidget.h"
+#endif
 #include "DeformationWidget.h"
 #include "mainwindow.h"
 #include <opencv2/core/core.hpp>	// OpenCV header file
-//#include <gl\freeglut.h>		// OpenGL header files
+//#include <GL/freeglut.h>		// OpenGL header files
 
 using namespace cv;
 //! [0]
@@ -353,7 +355,9 @@ void MainWindow::createMenus()
 	////////////////////////////////////////////////////////////////////
 	viewMenu = menuBar()->addMenu(tr("&Plug-in"));
 	viewMenu->addAction(GLOptiondock->toggleViewAction());
+#ifdef _WIN32
 	viewMenu->addAction(kinectAction);
+#endif
 	///////////////////////////////////////////////////////////////////
 
 	helpMenu = menuBar()->addMenu(tr("&Help"));
@@ -874,6 +878,7 @@ void MainWindow::menu_Plugin_Kinect()
 
 	*/
 	//------- GLOption Dock -------------------------------------
+#ifdef _WIN32
 	QDockWidget* KinectOptiondock = new QDockWidget(tr("KinectOption"), this);
 	GLWidget* myGlWidget = (GLWidget*)tabs->widget(0);
 	//MainWindow에서 DockWidget 변수전달
@@ -888,6 +893,7 @@ void MainWindow::menu_Plugin_Kinect()
 	// GLOptionwidget->createGLOptionWidget();
 
 	addDockWidget(Qt::LeftDockWidgetArea, KinectOptiondock);
+#endif
 
 }
 
