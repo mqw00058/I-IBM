@@ -228,6 +228,7 @@ public:
 	bool m_bCulled;										// Back face culling
 	bool m_bDrawAxis;									// Draw XYZ Axis
 	bool m_bCenter;									// Centering
+	bool m_bDrawBoundingBox;									// Draw bounding boxes of all models (scene option)
 	bool m_bDrawWorkspace;									//Draw Workspace
 	bool m_bLightDraw;									//Draw Light
 

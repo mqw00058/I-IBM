@@ -401,6 +401,7 @@ void GLWidget::GLInitializeState()
 
 	m_bDrawAxis = true;
 	m_bDrawWorkspace = true;
+	m_bDrawBoundingBox = false;
 
 
 
@@ -915,7 +916,7 @@ void GLWidget::RenderScene(Geometry3D *_mesh, drawingoptions* drwopt)
 		{
 		GLDrawMeshElements(mymesh, 10);
 		}*/
-		if (drwopt->m_bBoundingBox)
+		if (drwopt->m_bBoundingBox || m_bDrawBoundingBox)
 		{
 			GLDrawMeshElements(_mesh, 7);
 		}

@@ -114,6 +114,12 @@ void GLOptionWidget::RemoveSelectedElements()
 	glView->updateGL();
 }
 
+void GLOptionWidget::ONOFF_DrawSceneBoundingBox(bool onff)
+{
+	glView->m_bDrawBoundingBox = onff;
+	glView->updateGL();
+}
+
 void GLOptionWidget::ONOFF_DrawWorkspace(bool onff)
 {
 	glView->m_bDrawWorkspace = onff;
@@ -364,7 +370,7 @@ void GLOptionWidget::CreateRenderSceneOptions(QLayout  * RenderSceneOptionLayout
 
 	//¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á¡á
 
-	connect(bBoundingBoxCheckBox, SIGNAL(toggled(bool)), this, SLOT(ONOFF_DrawBoundingBox(int)));
+	connect(bBoundingBoxCheckBox, SIGNAL(toggled(bool)), this, SLOT(ONOFF_DrawSceneBoundingBox(bool)));
 	connect(bWorkspaceCheckBox, SIGNAL(toggled(bool)), this, SLOT(ONOFF_DrawWorkspace(bool)));
 	connect(bAxisCheckBox, SIGNAL(toggled(bool)), this, SLOT(ONOFF_DrawAxis(bool)));
 }

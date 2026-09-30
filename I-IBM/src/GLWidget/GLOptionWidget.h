@@ -31,6 +31,7 @@ public slots:
 	void ONOFF_SelectFacesMode(bool onff);
 	void RemoveSelectedElements();
 
+	void ONOFF_DrawSceneBoundingBox(bool onff);
 	void ONOFF_DrawWorkspace(bool onff);
 	void ONOFF_DrawAxis(bool onff);
 	void select_currentModel();
